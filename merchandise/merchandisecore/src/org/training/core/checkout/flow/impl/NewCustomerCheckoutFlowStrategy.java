@@ -9,22 +9,9 @@
  * Information and shall use it only in accordance with the terms of the
  * license agreement you entered into with hybris.
  *
- *  
+ *
  */
 package org.training.core.checkout.flow.impl;
-
-import de.hybris.platform.commerceservices.customer.CustomerAccountService;
-import de.hybris.platform.core.model.user.CustomerModel;
-import de.hybris.platform.core.model.user.UserModel;
-import de.hybris.platform.servicelayer.user.UserService;
-import de.hybris.platform.acceleratorservices.checkout.flow.impl.AbstractCheckoutFlowStrategy;
-import de.hybris.platform.acceleratorservices.checkout.flow.CheckoutFlowStrategy;
-import de.hybris.platform.acceleratorservices.enums.CheckoutFlowEnum;
-
-import org.apache.commons.collections.CollectionUtils;
-import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Required;
-
 
 /**
  * Prepared for customization flow strategy. Uses a {@link #isNewCustomer()} result to decide if use between
@@ -35,7 +22,7 @@ import org.springframework.beans.factory.annotation.Required;
 public class NewCustomerCheckoutFlowStrategy extends AbstractCheckoutFlowStrategy
 {
 	private static final Logger LOG = Logger.getLogger(NewCustomerCheckoutFlowStrategy.class);
-
+	//olalalala0909
 	private UserService userService;
 	private CustomerAccountService customerAccountService;
 	private CheckoutFlowStrategy newCustomerStrategy;
@@ -53,7 +40,7 @@ public class NewCustomerCheckoutFlowStrategy extends AbstractCheckoutFlowStrateg
 	/**
 	 * Method which checks whether customer is new. In this case it just checks if the customer has a default shipping
 	 * address.
-	 * 
+	 *
 	 * @return Returns true if this is a new customer
 	 */
 	protected boolean isNewCustomer()
